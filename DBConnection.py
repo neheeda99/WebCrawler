@@ -1,10 +1,9 @@
 import mysql.connector
 
+
 class Db:
-
-    def __init__(self) -> object:
-
-        self.cnx = mysql.connector.connect(host="localhost", user="root", password="", database="webcrawler")
+    def __init__(self):
+        self.cnx = mysql.connector.connect(host="localhost",user="root",password="",database="crawler")
         self.cur = self.cnx.cursor(dictionary=True)
 
 
