@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/crwqler_post" enctype="multipart/form-data">
+<table class="table table-striped">
+  <tr>
+    <td>Name</td>
+    <td>
+      <label for="textfield"></label>
+      <input type="text" name="keyw" id="textfield" class="form-control" required/>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2">
+      <div align="center">
+        <input type="submit" name="button" id="button" value="View" class="btn btn-primary"/>
+      </div>
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+{% endblock %}
